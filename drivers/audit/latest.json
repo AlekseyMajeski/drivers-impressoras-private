@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-15T17:46:32.648Z",
+  "rule": "Only mirror binaries when redistribution is explicitly allowed by the accompanying license or written manufacturer permission.",
+  "results": [
+    {"id":"elgin-i9-windows-1.8.0","manufacturer":"Elgin","model":"i9","priority":1,"audit":{"ok":true,"bytes":1552568,"sha256":"51452b170fbcf7f6b5a9f214a3a5d81e550b4954d0ca25a4bbc54be3c620597e","detectedRedistribution":"unknown"}},
+    {"id":"elgin-i8-windows-7.1.7","manufacturer":"Elgin","model":"i8","priority":2,"audit":{"ok":true,"bytes":3264923,"sha256":"111af2eabee31332ce42c1278bbc99588be8bbffdecad3a92d14449d35821264","detectedRedistribution":"unknown"}},
+    {"id":"elgin-i7-plus-windows","manufacturer":"Elgin","model":"i7 Plus","priority":3,"audit":{"ok":true,"bytes":3239551,"sha256":"738ba3b647775b1d8a2dcaac29455358ec015fa62a69ef19168403bfb58a5621","detectedRedistribution":"unknown"}},
+    {"id":"bematech-mp4200-th-spooler-5.0.0.4","manufacturer":"Bematech / Elgin","model":"MP-4200 TH","priority":4,"audit":{"ok":true,"bytes":26048705,"sha256":"688895d39b952763b4d41311b52316e3afa9b2cd6ecfef375327bde8a436e1f0","detectedRedistribution":"unknown"}},
+    {"id":"tanca-tp550-windows","manufacturer":"Tanca","model":"TP-550","priority":5,"audit":{"ok":true,"bytes":14388168,"sha256":"aa4c1667c763bed6b424583931a513980795d09ecb08106909aeeb995053136b","detectedRedistribution":"unknown"}},
+    {"id":"tanca-tp620-plus-windows","manufacturer":"Tanca","model":"TP-620 Plus","priority":6,"audit":{"ok":true,"bytes":4664748,"sha256":"4ec943efa80bb5b30b06cfcc94c1d131fdf1044f0760ce042dea141926bc9b69","detectedRedistribution":"unknown"}},
+    {"id":"tanca-tp650-windows","manufacturer":"Tanca","model":"TP-650","priority":7,"audit":{"ok":true,"bytes":16684031,"sha256":"e85cdb0e834ff9715c511810bc0fe37189308d211df322c987ef14455f3c9b81","detectedRedistribution":"unknown"}},
+    {"id":"sweda-si150-si250-windows","manufacturer":"Sweda","model":"SI-150 / SI-250","priority":8,"audit":{"ok":true,"bytes":7064558,"sha256":"fc3d90a515382c8c11568cadf4cda18973fab623a74dcdaab5e360317f413c6c","detectedRedistribution":"unknown"}},
+    {"id":"sweda-si600-windows","manufacturer":"Sweda","model":"SI-600","priority":9,"audit":{"ok":true,"bytes":12611535,"sha256":"b47338c60f6fd4689ca70cabe14f35172ac711761b6a3134b09c2724ad51b3a2","detectedRedistribution":"unknown"}},
+    {"id":"waytec-wp50-windows","manufacturer":"Waytec","model":"WP-50","priority":10,"audit":{"ok":false,"error":"TypeError: fetch failed"}},
+    {"id":"waytec-wp100-windows-7.17","manufacturer":"Waytec","model":"WP-100","priority":11,"audit":{"ok":false,"error":"TypeError: fetch failed"}},
+    {"id":"dimep-d-print-dual-windows","manufacturer":"DIMEP","model":"D-Print Dual","priority":12,"audit":{"ok":true,"bytes":54104970,"sha256":"5ffb759bb9d400e8bd593520194d6de4ea2b9f8ed3a125dc9dad8358727aefff","detectedRedistribution":"unknown"}}
+  ]
+}
