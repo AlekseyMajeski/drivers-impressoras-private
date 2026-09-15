@@ -31,6 +31,10 @@ jobs:
           VISIBILITY="$(gh api "repos/${GITHUB_REPOSITORY}" --jq '.visibility')"
           echo "Repository visibility: ${VISIBILITY}"
           if [ "${VISIBILITY}" != "private" ]; then
+            if gh release view private-driver-archive --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
+              echo "Repositório público: removendo release de preservação para não expor binários."
+              gh release delete private-driver-archive --repo "${GITHUB_REPOSITORY}" --cleanup-tag --yes
+            fi
             echo "::error::Arquivamento abortado: o repositório precisa estar PRIVATE antes de preservar binários."
             exit 1
           fi
@@ -49,5 +53,6 @@ jobs:
             echo "Catálogo sem alterações para commit."
           else
             git commit -m "archive: atualiza catálogo privado de drivers"
+            git pull --rebase origin main
             git push
           fi
