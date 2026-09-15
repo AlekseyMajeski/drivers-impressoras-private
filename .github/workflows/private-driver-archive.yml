@@ -1,0 +1,48 @@
+name: Private driver archive
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/sync-private-archive.mjs'
+      - '.github/workflows/private-driver-archive.yml'
+      - 'README.md'
+  workflow_dispatch:
+  schedule:
+    - cron: '35 6 * * 0'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout private archive
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Checkout public tutorial source
+        run: git clone --depth 1 https://github.com/AlekseyMajeski/tutoriais.git public-site
+
+      - name: Preserve current direct driver files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/sync-private-archive.mjs public-site
+
+      - name: Commit updated private catalog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog/latest.json catalog/latest.md
+          if git diff --cached --quiet; then
+            echo "Catálogo sem alterações para commit."
+          else
+            git commit -m "archive: atualiza catálogo privado de drivers"
+            git push
+          fi
