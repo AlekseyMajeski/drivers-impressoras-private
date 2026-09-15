@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "updatedAt": "2026-09-15",
+  "policy": {
+    "publicDelivery": "Prefer direct manufacturer file URLs. Use the model-specific official support page only when a stable direct file URL is unavailable.",
+    "privateArchive": "Preserve verified official binaries privately with source URL, version, collection date, size and SHA-256. Private archive binaries are not published by this repository.",
+    "publicMirror": "GitHub Releases may contain a preserved binary only when redistribution is explicitly allowed by the accompanying license or written manufacturer permission.",
+    "sourcePriority": "manufacturer-official",
+    "epson": "Keep Epson proprietary drivers on official public URLs only while current terms prohibit redistribution; private preservation remains separate from public delivery."
+  },
+  "candidates": [
+    {
+      "id": "elgin-i9-windows-1.8.0",
+      "manufacturer": "Elgin",
+      "model": "i9",
+      "platform": "Windows",
+      "version": "1.8.0",
+      "priority": 1,
+      "sourceUrl": "https://raw.githubusercontent.com/ElginDeveloperCommunity/Impressoras/master/Impressoras%20N%C3%A3o%20Fiscais/Utilit%C3%A1rios%20Elgin/i9/Drivers/ELGIN%20i9%20Printer%20Driver_v-1.8.0.zip",
+      "sourceKind": "official-developer-repository",
+      "releaseAssetName": "elgin-i9-windows-driver-1.8.0.zip",
+      "redistribution": {"status": "unknown", "evidence": null}
+    },
+    {
+      "id": "elgin-i8-windows-7.1.7",
+      "manufacturer": "Elgin",
+      "model": "i8",
+      "platform": "Windows",
+      "version": "7.1.7",
+      "priority": 2,
+      "sourceUrl": "https://raw.githubusercontent.com/ElginDeveloperCommunity/Impressoras/master/Impressoras%20N%C3%A3o%20Fiscais/Utilit%C3%A1rios%20Elgin/i8/Drivers/Elgin_i8_Windows_Driver_v7.1.7.zip",
+      "sourceKind": "official-developer-repository",
+      "releaseAssetName": "elgin-i8-windows-driver-7.1.7.zip",
+      "redistribution": {"status": "unknown", "evidence": null}
+    },
+    {
+      "id": "elgin-i7-plus-windows",
+      "manufacturer": "Elgin",
+      "model": "i7 Plus",
+      "platform": "Windows",
+      "version": "vendor-current-file",
+      "priority": 3,
+      "sourceUrl": "https://raw.githubusercontent.com/ElginDeveloperCommunity/Impressoras/master/Impressoras%20N%C3%A3o%20Fiscais/Utilit%C3%A1rios%20Elgin/i7%20Plus/Drivers/i7%20Plus%20-%20Driver%20Windows.zip",
+      "sourceKind": "official-developer-repository",
+      "releaseAssetName": "elgin-i7-plus-windows-driver.zip",
+      "redistribution": {"status": "unknown", "evidence": null}
+    },
+    {
+      "id": "bematech-mp4200-th-spooler-5.0.0.4",
+      "manufacturer": "Bematech / Elgin",
+      "model": "MP-4200 TH",
+      "platform": "Windows",
+      "version": "5.0.0.4",
+      "priority": 4,
+      "sourceUrl": "https://raw.githubusercontent.com/ElginDeveloperCommunity/Impressoras/master/Impressoras%20N%C3%A3o%20Fiscais/Utilit%C3%A1rios%20Bematech/MP-4200%20TH/Drivers/Spooler_Bematech/DriverSpoolerGeralBematech_V5.0.0.4.zip",
+      "sourceKind": "official-developer-repository",
+      "releaseAssetName": "bematech-mp4200-th-spooler-5.0.0.4.zip",
+      "redistribution": {"status": "unknown", "evidence": null}
+    },
+    {
+      "id": "tanca-tp550-windows",
+      "manufacturer": "Tanca",
+      "model": "TP-550",
+      "platform": "Windows",
+      "version": "vendor-current-file",
+      "priority": 5,
+      "sourceUrl": "https://www.tanca.com.br/assets/conteudo/drivers/TP-550/Driver_Utilitarios_TP-550.zip",
+      "sourceKind": "official-manufacturer-file",
+      "releaseAssetName": "tanca-tp550-driver-utilitarios.zip",
+      "redistribution": {"status": "unknown", "evidence": null}
+    },
+    {
+      "id": "tanca-tp620-plus-windows",
+      "manufacturer": "Tanca",
+      "model": "TP-620 Plus",
+      "platform": "Windows",
+      "version": "vendor-current-file",
+      "priority": 6,
+      "sourceUrl": "https://www.tanca.com.br/assets/conteudo/drivers/TP-620%2B/Driver_Windows.zip",
+      "sourceKind": "official-manufacturer-file",
+      "releaseAssetName": "tanca-tp620-plus-windows-driver.zip",
+      "redistribution": {"status": "unknown", "evidence": null}
+    },
+    {
+      "id": "tanca-tp650-windows",
+      "manufacturer": "Tanca",
+      "model": "TP-650",
+      "platform": "Windows",
+      "version": "vendor-current-file",
+      "priority": 7,
+      "sourceUrl": "https://www.tanca.com.br/assets/conteudo/drivers/TP-650/Driver_Utilitarios_TP-650.zip",
+      "sourceKind": "official-manufacturer-file",
+      "releaseAssetName": "tanca-tp650-driver-utilitarios.zip",
+      "redistribution": {"status": "unknown", "evidence": null}
+    },
+    {
+      "id": "sweda-si150-si250-windows",
+      "manufacturer": "Sweda",
+      "model": "SI-150 / SI-250",
+      "platform": "Windows",
+      "version": "vendor-current-file",
+      "priority": 8,
+      "sourceUrl": "https://sweda.com.br/downloads/DRIVER_SI-150_250_x86_x64.zip",
+      "sourceKind": "official-manufacturer-file",
+      "releaseAssetName": "sweda-si150-si250-windows-driver.zip",
+      "redistribution": {"status": "unknown", "evidence": null}
+    },
+    {
+      "id": "sweda-si600-windows",
+      "manufacturer": "Sweda",
+      "model": "SI-600",
+      "platform": "Windows",
+      "version": "vendor-current-file",
+      "priority": 9,
+      "sourceUrl": "https://sweda.com.br/downloads/site/SI600/drivers/driver-SI600-Windows.zip",
+      "sourceKind": "official-manufacturer-file",
+      "releaseAssetName": "sweda-si600-windows-driver.zip",
+      "redistribution": {"status": "unknown", "evidence": null}
+    },
+    {
+      "id": "waytec-wp50-windows",
+      "manufacturer": "Waytec",
+      "model": "WP-50",
+      "platform": "Windows",
+      "version": "vendor-current-file",
+      "priority": 10,
+      "sourceUrl": "https://suporte.waytec.com.br/drivers/wp-50/Drivers_WP-50.zip",
+      "sourceKind": "official-manufacturer-file",
+      "releaseAssetName": "waytec-wp50-windows-driver.zip",
+      "redistribution": {"status": "unknown", "evidence": null}
+    },
+    {
+      "id": "waytec-wp100-windows-7.17",
+      "manufacturer": "Waytec",
+      "model": "WP-100",
+      "platform": "Windows",
+      "version": "7.17",
+      "priority": 11,
+      "sourceUrl": "https://suporte.waytec.com.br/drivers/wp-100/WayTec_Printer_Driver_Setup_V7.17.exe",
+      "sourceKind": "official-manufacturer-file",
+      "releaseAssetName": "waytec-wp100-windows-driver-7.17.exe",
+      "redistribution": {"status": "unknown", "evidence": null}
+    },
+    {
+      "id": "dimep-d-print-dual-windows",
+      "manufacturer": "DIMEP",
+      "model": "D-Print Dual",
+      "platform": "Windows",
+      "version": "vendor-current-file",
+      "priority": 12,
+      "sourceUrl": "https://www.dimep.com.br/wp-content/uploads/2025/12/D_PrintDual_Windows.zip",
+      "sourceKind": "official-manufacturer-file",
+      "releaseAssetName": "dimep-d-print-dual-windows.zip",
+      "redistribution": {"status": "unknown", "evidence": null}
+    }
+  ]
+}
