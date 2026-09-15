@@ -1,0 +1,33 @@
+name: Driver preservation audit
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'drivers/archive-manifest.json'
+      - 'scripts/audit-driver-preservation.mjs'
+      - '.github/workflows/driver-preservation-audit.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Audit preservation candidates
+        run: node scripts/audit-driver-preservation.mjs
+      - name: Upload preservation report
+        uses: actions/upload-artifact@v4
+        with:
+          name: driver-preservation-audit
+          path: |
+            drivers/audit/latest.json
+            drivers/audit/latest.md
+          retention-days: 30
